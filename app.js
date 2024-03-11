@@ -6,7 +6,8 @@ var animals = {
     "cat": "meow",
     "dog": "bark",
     "cow": "moe",
-    "lion": "roar"
+    "lion": "roar",
+    "duck": "quack"
 }
 
 function getAnimal() {
@@ -18,14 +19,14 @@ const app = express();
 app.get('/', function(req, res){
   const [animal_name, sound] = getAnimal();
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write(`Ravindra Nayak had a farm.<br />
+  res.write(`<font size='14'> Ravindra Nayak had a farm.<br />
 E-I-E-I-O<br />
 And on his farm he had a ${ animal_name }.<br />
 E-I-E-I-O<br />
 With a ${ sound }-${ sound } here.<br />
 And a ${ sound }-${ sound } there.<br />
 Here a ${ sound }, there a ${ sound }.<br />
-Everywhere a ${ sound }-${ sound }.<br />`);
+Everywhere a ${ sound }-${ sound }.<br /></font>`);
       res.end();
 });
 
