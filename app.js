@@ -6,7 +6,8 @@ var animals = {
     "cat": "meow",
     "dog": "bark",
     "cow": "moe",
-    "lion": "roar"
+    "lion": "roar",
+    "duck": "quack"
 }
 
 function getAnimal() {
